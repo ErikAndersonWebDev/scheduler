@@ -1,5 +1,4 @@
 import React from "react";
-import Axios from "axios";
 import "components/Appointment/styles.scss";
 import Header from "./Header";
 import Show from "./Show";
@@ -23,6 +22,7 @@ export default function Appointment(props) {
   const { mode, transition, back } = useVisualMode(
     props.interview ? SHOW : EMPTY
   );
+
   function save(name, interviewer) {
     if (!name || !interviewer) {
       return;
