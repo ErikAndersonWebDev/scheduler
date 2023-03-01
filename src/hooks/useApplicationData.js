@@ -53,8 +53,7 @@ export default function useApplicationData(props) {
 
     return Axios.put(`/api/appointments/${id}`, appointment).then(() => {
       const newState = { ...state, appointments };
-      const finalState = updateSpots(newState);
-      setState(finalState);
+      setState(updateSpots(newState));
     });
   }
 
