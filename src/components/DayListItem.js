@@ -8,7 +8,6 @@ export default function DayListItem(props) {
     "day-list__item--selected": props.selected,
     "day-list__item--full": !props.spots,
   });
-
   const formatSpots = function () {
     if (props.spots === 0) {
       return "no spots";
@@ -18,7 +17,6 @@ export default function DayListItem(props) {
       return `${props.spots} spots`;
     }
   };
-
   return (
     <li
       data-testid="day"
