@@ -7,12 +7,12 @@ export default function Button(props) {
     "button--danger": props.danger,
   });
   return (
-    <Button
+    <button
       disabled={props.disabled}
       onClick={props.onClick}
       className={buttonClass}
     >
       {props.children}
-    </Button>
+    </button>
   );
 }
